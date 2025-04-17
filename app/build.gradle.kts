@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -19,6 +21,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 
     buildTypes {
         release {
@@ -49,5 +52,17 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.lottie)
+    implementation (platform(libs.kotlin.bom.v1922))
 
+    implementation("com.google.android.libraries.places:places:4.2.0")
+
+
+    // Lifecycle
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+
+
+    // Glide (for loading place images)
+    implementation (libs.glide)
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
 }
