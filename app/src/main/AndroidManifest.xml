@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AI_Powered_Travel_Companion"
         tools:targetApi="31">
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity
