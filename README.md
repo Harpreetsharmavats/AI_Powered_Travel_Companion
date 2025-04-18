@@ -16,16 +16,7 @@ An AI-powered native Android app built with Kotlin, using the Google Places API 
 
 ## 📸 Screenshots
 
-| Home Screen|
-![image](https://github.com/user-attachments/assets/e16cda3e-bc9f-4959-8c58-ffcf8f826c4d)
-
-| Results Screen |
-![image](https://github.com/user-attachments/assets/154d8877-a967-454e-8453-9a4797780fde)
-
-
-|Details Screen |
-![image](https://github.com/user-attachments/assets/4111dfd8-d3cc-4c51-b4f8-b533aaa9f245)
-
+![Login Screen (1)](https://github.com/user-attachments/assets/5cd6d2b7-1abb-4335-80a7-aa01e8d48f6e)
 
 
 
