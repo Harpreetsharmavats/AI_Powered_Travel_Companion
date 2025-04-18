@@ -12,7 +12,7 @@ class ResultViewModel(private val repository: PlaceRepository) : ViewModel() {
     val placeList : LiveData<List<PlacesItems>> get() = _placeList
 
     fun search(place : String){
-        repository.searchPlaces(place){result->
+        repository.loadTopTouristPlacesByCity(place){result->
             _placeList.postValue(result)
         }
     }

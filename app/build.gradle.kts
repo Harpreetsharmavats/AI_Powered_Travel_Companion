@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.ai_powered_travel_companion"
-        minSdk = 27
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -52,7 +52,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.lottie)
-    implementation (platform(libs.kotlin.bom.v1922))
 
     implementation("com.google.android.libraries.places:places:4.2.0")
 
@@ -60,8 +59,8 @@ dependencies {
     // Lifecycle
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
-
-
+    implementation ("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.google.maps.android:android-maps-utils:3.10.0")
     // Glide (for loading place images)
     implementation (libs.glide)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")

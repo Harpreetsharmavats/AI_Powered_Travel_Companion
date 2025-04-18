@@ -8,36 +8,28 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
         android:id="@+id/place"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="32dp"
-        android:hint="Enter a Place"
+        android:inputType="text"
+        android:hint="@string/enter_a_place"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-
-            />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.MaterialAutoCompleteTextView>
 
     <Button
         android:id="@+id/findplace"
         android:layout_width="150dp"
         android:layout_height="56dp"
         android:layout_marginTop="8dp"
-        android:text="Find Places"
+        android:text="@string/find_places"
         app:layout_constraintEnd_toEndOf="@+id/place"
         app:layout_constraintStart_toStartOf="@+id/place"
         app:layout_constraintTop_toBottomOf="@+id/place" />

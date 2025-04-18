@@ -14,7 +14,7 @@ class ResultAdapter(private val onClick : (PlacesItems) -> Unit) : RecyclerView.
             binding.name.text = placesItems.name
             binding.ratings.text = "Ratings ${placesItems.rating}"
             placesItems.photoReference?.let {
-                val photoUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$it&key=AIzaSyBhasG_ac-KDpvSUGRwHpNpB-6asubmuKg"
+                val photoUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$it&key=AIzaSyAN5j2TCV2XrjjQRMReHN6q6joM8Vbkx3I"
                 Glide.with(binding.root.context).load(photoUrl).into(binding.imageView)
             }
             binding.root.setOnClickListener { onClick(placesItems) }

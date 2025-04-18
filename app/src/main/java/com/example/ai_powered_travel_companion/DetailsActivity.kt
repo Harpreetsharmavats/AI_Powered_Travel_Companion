@@ -15,15 +15,15 @@ class DetailsActivity : AppCompatActivity() {
         setContentView(binding.root)
         val name = intent.getStringExtra("name")
         val address = intent.getStringExtra("address")
-        val rating = intent.getStringExtra("rating")
+        val opening = intent.getStringExtra("opening")
         val photoReference = intent.getStringExtra("photoReference")
         binding.place.text = name
         binding.address.text = address
-        binding.openingHours.text = "Rating: $rating"
+        binding.openingHours.text = opening
 
-        if (!photoReference.isNullOrEmpty()) {
-            val photoUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$photoReference&key=YOUR_API_KEY"
-            Glide.with(this).load(photoUrl).into(binding.placeimage)
+        photoReference?.let {
+            val photoUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$it&key=AIzaSyAN5j2TCV2XrjjQRMReHN6q6joM8Vbkx3I"
+            Glide.with(binding.root.context).load(photoUrl).into(binding.placeimage)
         }
 
     }
